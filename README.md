@@ -1,16 +1,17 @@
 # AuxTel_summit_tests_2023
 This repository contains notebooks and scripts for the tests conducted on AuxTel on September 2023 
 
+## description of subpackages
+
+- **runspectractor_standalone** : run spectractor in standalone 
+- **AuxtelStarAlt** : Object trajectory in sky for follow targets
+- **special_flats_for_spectroscopy** :
 
 ## Installation of softwares at USDF
 
-
-
-
 ### initialisation of DM
 
-6 september 2023
-
+- 6 september 2023
 
 - edit `README.md` in `/sdf/home/d/dagoret`
 
@@ -18,9 +19,7 @@ This repository contains notebooks and scripts for the tests conducted on AuxTel
 source /sdf/group/rubin/sw/tag/w_2023_35/loadLSST.bash
 setup lsst_distrib -t w_2023_35
 ```
-
-
-	#6 septembre 2023 : use w_202335
+	# 6th septembre 2023 : use w_202335
 	source /sdf/group/rubin/sw/tag/w_2023_35/loadLSST.bash
 	setup lsst_distrib -t w_2023_35
 	source ~/notebooks/.user_setups
@@ -28,10 +27,9 @@ setup lsst_distrib -t w_2023_35
 #### creation of repos
 
 ```bash
- cd repos/
- mkdir repos_w_2023_35
+cd repos/
+mkdir repos_w_2023_35
 ```
-
 
 #### edit .usersetup
  
@@ -63,7 +61,7 @@ scons opt=3 -j 8
 Puis copier le fichier yaml pour rebin1
 
 ```bash
- /sdf/home/d/dagoret/repos/repos_w_2023_35/atmospec/pipelines>cp -r ../../../repos_w_2023_27/atmospec/pipelines/rebin1 .
+/sdf/home/d/dagoret/repos/repos_w_2023_35/atmospec/pipelines>cp -r ../../../repos_w_2023_27/atmospec/pipelines/rebin1 .
 ```
 
 ##### Spectractor
