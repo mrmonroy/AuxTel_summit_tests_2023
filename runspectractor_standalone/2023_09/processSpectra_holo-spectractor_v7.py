@@ -7,7 +7,7 @@
 # - author : Sylvie Dagoret-Campagne
 # - affiliation : IJCLab/IN2P3/CNES, DESC-LSST fullmember, behalf AuxTel Teal VERA C. Rubin observatory
 # - creation date : 2023-09-06
-# - Last update : 2023-09-06
+# - Last update : 2023-09-13
 
 # source /sps/lsst/groups/auxtel/softs/MySetup_py39_SDC.sh 
 
@@ -213,10 +213,12 @@ print("List of configuration files available : ",os.listdir("./config"))
 
 # Choose the config filename
 # Choose the config filename
-list_of_spectractorconfigfiles= ['auxtel_config_holo_DECONVOLUTION_FFMv_REBIN2_Janv2023.ini' ,
-                                 'auxtel_config_holo_DECONVOLUTION_FFMv_REBIN1_Janv2023.ini']                                
+               list_of_spectractorconfigfiles= ['auxtel_config_holo_DECONVOLUTION_FFMv_REBIN2_Janv2023.ini' ,                                'auxtel_config_holo_DECONVOLUTION_FFMv_REBIN1_Janv2023.ini',                                'auxtel_config_holo_DECONVOLUTION_FFMv_REBIN2_findrot_Sept2023.ini']
+
+
+
                                 
-config_idx = len(list_of_spectractorconfigfiles)-2
+config_idx = len(list_of_spectractorconfigfiles)-1
 
 
 configfilename= os.path.join("./config",list_of_spectractorconfigfiles[config_idx])
