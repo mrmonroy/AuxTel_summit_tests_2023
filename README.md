@@ -1,11 +1,25 @@
 # AuxTel_summit_tests_2023
 This repository contains notebooks and scripts for the tests conducted on AuxTel on September 2023 
 
+- last update 2023/09/13
+
 ## description of subpackages
 
 - **runspectractor_standalone** : run spectractor in standalone 
 - **AuxtelStarAlt** : Object trajectory in sky for follow targets
 - **special_flats_for_spectroscopy** :
+
+
+## Check the data in butler interactively
+
+```bash
+export BUTLER_REPO="/sdf/group/rubin/repo/oga"
+butler query-dimension-records $BUTLER_REPO exposure --where "instrument='LATISS' AND exposure.day_obs=20230912"
+butler query-dimension-records $BUTLER_REPO exposure --where "instrument='LATISS' AND exposure.day_obs=20230912 AND exposure.science_program='SITCOM-1001'"
+butler query-dimension-records $BUTLER_REPO exposure --where "instrument='LATISS' AND exposure.day_obs=20230912 AND exposure.science_program='SITCOM-1001' AND physical_filter='empty~holo4_003'"
+butler query-dimension-records $BUTLER_REPO exposure --where "instrument='LATISS' AND exposure.day_obs=20230912 AND exposure.science_program='SITCOM-1001' AND physical_filter='empty~holo4_003' AND exposure.observation_type='science'"
+butler query-dimension-records $BUTLER_REPO exposure --where "instrument='LATISS' AND exposure.day_obs=20230912 AND exposure.science_program='SITCOM-1001' AND physical_filter='collimator~holo4_003' AND exposure.observation_type='science'"
+```
 
 ## Installation of softwares at USDF
 
