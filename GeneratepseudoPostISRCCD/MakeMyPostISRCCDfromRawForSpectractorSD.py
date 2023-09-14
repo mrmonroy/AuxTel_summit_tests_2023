@@ -140,12 +140,19 @@ warnings.filterwarnings("ignore")
 #FILTER = "empty-holo4_003"
 
 
-DATE = 20230912
+#DATE = 20230912
 #FILTER="cyl_lens-holo4_001"
 #FILTER="cyl_lens-holo4_003"
 #FILTER="collimator-holo4_003"
 #FILTER="empty-holo4_001"
-FILTER="empty-holo4_003"
+#FILTER="empty-holo4_003"
+
+DATE = 20230913
+#visitdispersers_20230913_filt_collimator-holo4_003.list  visitdispersers_20230913_filt_cyl_lens-holo4_003.list	#visitdispersers_20230913_filt_empty-holo4_001.list  visitdispersers_20230913_filt_empty-holo4_003.list
+#FILTER="collimator-holo4_003"
+#FILTER="cyl_lens-holo4_003"
+#FILTER="empty-holo4_003"
+FILTER="empty-holo4_001"
 
 
 # input filename
