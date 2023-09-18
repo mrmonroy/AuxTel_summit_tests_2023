@@ -12,9 +12,11 @@
 # - author : Sylvie Dagoret-Campagne
 # - affiliation : IJCLab
 # - creation date : 2023/09/15
-# - last update : 2023/09/15
+# - last update : 2023/09/18
 # 
 # 
+#write output file according hierarchy
+#         DATE/Filter 
 
 
 import os
