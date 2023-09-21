@@ -2,6 +2,7 @@
 
 # author : Sylvie Dagoret-Campagne 
 #creation date : 2023/09/13
+# update 2023/09/21
 
 
 #Purpose : learn using BPS for the photometry  pipeline
@@ -10,6 +11,16 @@
 source /cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2023_35/loadLSST.bash 
 source /cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2023_35/loadLSST-ext.bash
 setup lsst_distrib
+
+#or
+#6 septembre 2023 : use w_202335
+source /sdf/group/rubin/sw/tag/w_2023_35/loadLSST.bash
+setup lsst_distrib -t w_2023_35
+source ~/notebooks/.user_setups
+
+
+
+
 #pip install 'parsl[monitoring]' --user
 #pip uninstall sqlalchemy
 
