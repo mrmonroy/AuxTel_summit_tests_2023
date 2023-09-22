@@ -233,7 +233,7 @@ print("List of configuration files available : ",os.listdir("./config"))
 
 
                                 
-config_idx = len(list_of_spectractorconfigfiles)-1
+config_idx = len(list_of_spectractorconfigfiles)-3
 
 
 configfilename= os.path.join("./config",list_of_spectractorconfigfiles[config_idx])
@@ -281,7 +281,10 @@ print(f"path_output_spectractor       = {path_output_spectractor}")
 # # Logbook for input file selection
 # - the logbook contains all input image path and possibily the order 0 position
 
-filename_logbook='logbooks/auxtellogbook_'+filterdispersername+"_"+DATE+'_' + version+'.csv'
+
+dir_logbooks="logbooks"
+filename_logbook =os.path.join(dir_logbooks,"auxtellogbook_" + imagemode +"_" + filterdispersername + "_"+ DATE +"_" + version + ".csv")
+
 
 print(f"filename_logbook              = {filename_logbook}")
 
