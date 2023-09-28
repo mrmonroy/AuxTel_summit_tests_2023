@@ -1,0 +1,37 @@
+# README.md
+
+
+- author : Sylvie Dagoret-Campagne
+- creation date 2023-09-28
+
+
+export DISPLAY=
+  
+## Activation
+
+source /sdf/group/rubin/sw/tag/w_2023_35/loadLSST.bash
+setup lsst_distrib -t w_2023_35
+source ~/notebooks/.user_setups
+
+  
+
+  
+
+# Installation
+
+git clone git@github.com:lsst/atmospec.git
+cd atmospec
+git pull
+git branch --all
+setup -j -r .
+scons opt=3 -j 8
+
+## September 26th 2023
+
+# empty~holo4_003, rebin2
+nohup bps submit survey_singleframe_v154.yaml > bps_manyspectra_v154.out &
+
+## September 27th 2023
+# empty~holo4_003, rebin2
+nohup bps submit survey_singleframe_v156.yaml > bps_manyspectra_v156.out &
+

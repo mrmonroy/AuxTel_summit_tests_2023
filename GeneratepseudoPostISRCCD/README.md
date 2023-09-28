@@ -2,7 +2,7 @@
 
 - author : Sylvie Dagoret-Campagne
 - creation date : September 2023
-- last update 2023-09-20
+- last update 2023-09-28
 
 
 ## Purpose
@@ -35,7 +35,7 @@ Script xan be used for fast running. No visudalisation
 - **MakeMyPostISRCCDfromRawForSpectractorSD.py**  
 - **MakeMyPostISRCCDfromRawForSpectractorSD_v2.py** this is what I need
 
-## New 
+## New in September 2023
 
 The good procedure is to extract PostISRCCD from PostISRCCD
 
