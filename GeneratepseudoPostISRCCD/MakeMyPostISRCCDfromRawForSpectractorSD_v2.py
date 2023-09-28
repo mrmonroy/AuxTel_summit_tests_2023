@@ -162,6 +162,18 @@ DATE = 20230914
 FILTER="empty~holo4_001"
 
 
+#DATE = 20230926
+#FILTER="cyl_lens~holo4_003"
+#FILTER="empty~holo4_003"
+
+
+
+DATE = 20230927
+#FILTER="cyl_lens~holo4_003"
+FILTER="empty~holo4_003"
+
+
+
 # input filename
 #----------------
 
