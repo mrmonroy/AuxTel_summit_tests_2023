@@ -6,10 +6,10 @@ campaign: SPECSept2023
 
 # UPDATE THESE arguments to mirror the ones you use with command-line pipetask run
 payload:
-  payloadName: 'BPS_manyspectro_v154'
-  butlerConfig: /sdf/group/rubin/repo/oga
+  payloadName: 'BPS_manyspectro_v156'
+  butlerConfig: /repo/embargo
   inCollection: LATISS/raw/all,refcats,LATISS/calib
-  dataQuery: "instrument='LATISS' AND exposure.day_obs=20230926 AND physical_filter='empty~holo4_003' AND exposure.observation_type='science'"
+  dataQuery: "instrument='LATISS' AND exposure.day_obs=20230927 AND physical_filter='empty~holo4_003' AND exposure.observation_type='science'"
   runPreCmdOpts: --long-log --log-level timer.lsst.resources=DEBUG 
 
 wmsServiceClass: lsst.ctrl.bps.parsl.ParslService
