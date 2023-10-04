@@ -38,3 +38,10 @@ nohup bps submit survey_singleframe_v156.yaml > bps_manyspectra_v156.out &
 ## September 28th 2023
 # empty~holo4_003, rebin2
 nohup bps submit survey_singleframe_v158.yaml > bps_manyspectra_v158.out &
+
+
+
+
+# now with rebin1
+nohup bps submit survey_singleframe_v159.yaml > bps_manyspectra_v159.out &
+nohup bps submit survey_singleframe_v157.yaml > bps_manyspectra_v157.out &
