@@ -48,7 +48,17 @@ nohup bps submit survey_singleframe_v157.yaml > bps_manyspectra_v157.out &
 
 
 # rebin1
+#MUST DO
 
+
+Greg Daues
+  il y a 22 minutes
+Can you try adding
+--account rubin along with those?
+It looks like the account setting is needed. It is also possible to set Env vars if that is easier:
+export SLURM_ACCOUNT=rubin
+export SALLOC_ACCOUNT=$SLURM_ACCOUNT
+export SBATCH_ACCOUNT=$SLURM_ACCOUNT
 
 source /sdf/group/rubin/sw/tag/w_2023_40/loadLSST.bash
 setup lsst_distrib -t w_2023_40
